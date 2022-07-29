@@ -8,13 +8,17 @@ function App() {
   const [isGameOver, setIsGameOver] = useState(false);
   const [highScore, setHighScore] = useState(0);
 
+  const updateScore = (i) => {
+    if (i === 0) {
+      setScore(0);
+    } else setScore(score + 1);
+  }
   return (
     <div>
       <Scoreboard score={score} highScore={highScore} setHighScore={setHighScore}></Scoreboard>
       {!isGameOver && (
         <Cards
-          score={score}
-          setScore={setScore}
+          updateScore={updateScore}
           chosenCards={chosenCards}
           setChosenCards={setChosenCards}
           setIsGameOver={setIsGameOver}
