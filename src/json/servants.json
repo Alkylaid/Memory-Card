@@ -1,0 +1,46 @@
+[
+{
+    "name": "Alter Ego",
+    "img": "../imgs/AlterEgo.png"
+  },
+  {
+    "name": "Archer",
+    "img": "../imgs/Archer.png"
+  },
+  {
+    "name": "Assassin",
+    "img": "../imgs/Assassin.png"
+  },
+  {
+    "name": "Aveber",
+    "img": "../imgs/Avenger.png"
+  },
+  {
+    "name": "Berserker",
+    "img": "../imgs/Berserker.png"
+  },
+  {
+    "name": "Caster",
+    "img": "../imgs/Caster.png"
+  },
+  {
+    "name": "Foreigner",
+    "img": "../imgs/Foreigner.png"
+  },
+  {
+    "name": "Lancer",
+    "img": "../imgs/Lancer.png"
+  },
+  {
+    "name": "Rider",
+    "img": "../imgs/Rider.png"
+  },
+  {
+    "name": "Ruler",
+    "img": "../imgs/Ruler.png"
+  },
+  {
+    "name": "Saber",
+    "img": "../imgs/Saber.png"
+  }
+]
