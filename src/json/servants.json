@@ -1,46 +1,62 @@
 [
 {
     "name": "Alter Ego",
-    "img": "../imgs/AlterEgo.png"
+    "img": "../imgs/AlterEgo.png",
+    "id": "1"
   },
   {
     "name": "Archer",
-    "img": "../imgs/Archer.png"
+    "img": "../imgs/Archer.png",
+    "id": "2"
   },
   {
     "name": "Assassin",
-    "img": "../imgs/Assassin.png"
+    "img": "../imgs/Assassin.png",
+    "id": "3"
   },
   {
-    "name": "Aveber",
-    "img": "../imgs/Avenger.png"
+    "name": "Avenger",
+    "img": "../imgs/Avenger.png",
+    "id": "4"
   },
   {
     "name": "Berserker",
-    "img": "../imgs/Berserker.png"
+    "img": "../imgs/Berserker.png",
+    "id": "5"
   },
   {
     "name": "Caster",
-    "img": "../imgs/Caster.png"
+    "img": "../imgs/Caster.png",
+    "id": "6"
   },
   {
     "name": "Foreigner",
-    "img": "../imgs/Foreigner.png"
+    "img": "../imgs/Foreigner.png",
+    "id": "7"
   },
   {
     "name": "Lancer",
-    "img": "../imgs/Lancer.png"
+    "img": "../imgs/Lancer.png",
+    "id": "8"
   },
   {
     "name": "Rider",
-    "img": "../imgs/Rider.png"
+    "img": "../imgs/Rider.png",
+    "id": "9"
   },
   {
     "name": "Ruler",
-    "img": "../imgs/Ruler.png"
+    "img": "../imgs/Ruler.png",
+    "id": "10"
   },
   {
     "name": "Saber",
-    "img": "../imgs/Saber.png"
+    "img": "../imgs/Saber.png",
+    "id": "11"
+  },
+  {
+    "name": "Moon Cancer",
+    "img": "../imgs/MoonCancer.png",
+    "id": "12"
   }
 ]

@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import servants from '../json/servants.json'
+import { useState } from 'react';
+import Cards from './Cards';
+import Scoreboard from './Scoreboard';
 
 function App() {
-  const [cards, setCards] = useState(servants);
+ const [score, setScore] = useState(0);
+ const [prevCard, setPrevCard] = useState(null);
+ const [isGameOver, setIsGameOver] = useState(false);
 
-  useEffect(() => {
-  }, []);
 
-  return <div className="App"><img src={cards[0].img}></img></div>;
+  return(
+  <div>
+    <Scoreboard score={score}></Scoreboard>
+    {!isGameOver && <Cards  score={score} setScore={setScore} prevCard={prevCard} setPrevCard={setPrevCard} setIsGameOver={setIsGameOver}/>}
+  </div>)
 }
 
 export default App;
