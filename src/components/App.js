@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Cards from './Cards';
+import GameOver from './GameOver';
 import Scoreboard from './Scoreboard';
 
 function App() {
@@ -13,17 +14,17 @@ function App() {
       setScore(0);
     } else setScore(score + 1);
   }
+
   return (
     <div>
       <Scoreboard score={score} highScore={highScore} setHighScore={setHighScore}></Scoreboard>
-      {!isGameOver && (
         <Cards
           updateScore={updateScore}
           chosenCards={chosenCards}
           setChosenCards={setChosenCards}
           setIsGameOver={setIsGameOver}
         />
-      )}
+      {isGameOver && <GameOver/>}
     </div>
   );
 }

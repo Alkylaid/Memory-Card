@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import shuffle from './shuffle';
+import useShuffle from './useShuffle';
 import servants from '../json/servants.json';
 
 const Cards = ({updateScore,chosenCards, setChosenCards, setIsGameOver}) => {
-  const [cards, setCards] = useState(shuffle(servants));
+  const cardSet = useShuffle(servants)
+  const [cards] = useState(cardSet);
 
   const handleClick = (selected) => {
     let cardSelected = false;
@@ -17,11 +18,8 @@ const Cards = ({updateScore,chosenCards, setChosenCards, setIsGameOver}) => {
         setChosenCards(chosenCards.concat(selected.name));
     }  else {
         updateScore(0);
-
+        setIsGameOver(true);
     }
-    setCards(shuffle(servants));
-
-
 }
 
   return (
