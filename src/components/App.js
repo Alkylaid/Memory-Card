@@ -14,7 +14,11 @@ function App() {
       setScore(0);
     } else setScore(score + 1);
   }
-
+  const newGame = () => {
+    setScore(0);
+    setIsGameOver(false);
+    setChosenCards([]);
+  }
   return (
     <div>
       <Scoreboard score={score} highScore={highScore} setHighScore={setHighScore}></Scoreboard>
@@ -24,7 +28,7 @@ function App() {
           setChosenCards={setChosenCards}
           setIsGameOver={setIsGameOver}
         />
-      {isGameOver && <GameOver/>}
+      {isGameOver && <GameOver newGame={newGame} setHighScore={setHighScore}/>}
     </div>
   );
 }

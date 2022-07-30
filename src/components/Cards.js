@@ -17,7 +17,6 @@ const Cards = ({updateScore,chosenCards, setChosenCards, setIsGameOver}) => {
         updateScore();
         setChosenCards(chosenCards.concat(selected.name));
     }  else {
-        updateScore(0);
         setIsGameOver(true);
     }
 }
