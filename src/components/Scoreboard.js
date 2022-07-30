@@ -7,7 +7,7 @@ const Scoreboard= ({score, highScore, setHighScore}) => {
             setHighScore(score);
         }
     },[score, highScore, setHighScore])
-    return ( <div id="scoreboard">Score: {score} Highscore: {highScore}</div> );
+    return ( <div id="scoreboard"><div id="score">Score: {score}</div><div id="highscore">Highscore: {highScore}</div></div> );
 }
  
 export default Scoreboard ;

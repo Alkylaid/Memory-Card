@@ -6,6 +6,7 @@ const Cards = ({updateScore,chosenCards, setChosenCards, setIsGameOver}) => {
   const cardSet = useShuffle(servants)
   const [cards] = useState(cardSet);
 
+
   const handleClick = (selected) => {
     let cardSelected = false;
     chosenCards.forEach(card => {

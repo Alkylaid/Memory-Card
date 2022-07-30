@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Cards from './Cards';
 import GameOver from './GameOver';
+import Header from './Header';
 import Scoreboard from './Scoreboard';
 
 function App() {
@@ -19,8 +20,16 @@ function App() {
     setIsGameOver(false);
     setChosenCards([]);
   }
+
+  useEffect(() => {
+    if (chosenCards.length >= 12) {
+      setIsGameOver(true);
+    }
+  },[chosenCards])
+  
   return (
     <div>
+      <Header />
       <Scoreboard score={score} highScore={highScore} setHighScore={setHighScore}></Scoreboard>
         <Cards
           updateScore={updateScore}
